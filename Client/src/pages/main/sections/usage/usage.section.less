@@ -14,18 +14,19 @@
 
 .usage__image-group {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(15.1rem, 1fr));
+	grid-template-columns: repeat(2, minmax(15.1rem, 1fr));
 	gap: 2.4rem 2.5rem;
 	margin-bottom: 6.4rem;
+	justify-content: center;
 
 	@media (width >= 768px) {
-		grid-template-columns: repeat(auto-fit, max(16.4rem, 1fr));
+		grid-template-columns: repeat(4, minmax(16.4rem, 1fr));
 		gap: 1.3rem 1.1rem;
 		margin-bottom: 4.8rem;
 	}
 
 	@media (width >= 1440px) {
-		grid-template-columns: repeat(auto-fit, max(25.5rem, 1fr));
+		grid-template-columns: repeat(4, minmax(25.5rem, 1fr));
 		gap: 3.2rem 3rem;
 		margin-bottom: 8rem;
 	}
