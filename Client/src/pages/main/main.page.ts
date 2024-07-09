@@ -6,7 +6,6 @@ import { HeroSection, UsageSection } from "@pages/main/sections";
 	selector: "app-main-page",
 	standalone: true,
 	imports: [HeroSection, UsageSection],
-	templateUrl: "./main.page.html",
-	styleUrl: "./main.page.less"
+	templateUrl: "./main.page.html"
 })
 export class MainPage {}
