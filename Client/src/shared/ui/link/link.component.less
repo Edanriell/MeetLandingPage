@@ -1,0 +1,59 @@
+.link {
+	position: relative;
+	display: block;
+	font-family: var(--font-family), sans-serif;
+	font-weight: 900;
+	font-size: 1.6rem;
+	line-height: 162%;
+	color: var(--white);
+	text-decoration: none;
+	cursor: pointer;
+	margin-inline: auto;
+	width: max-content;
+	text-align: center;
+	z-index: 2;
+
+	> ::ng-deep span {
+		font-family: var(--font-family), sans-serif;
+		font-weight: 900;
+		font-size: 1.6rem;
+		line-height: 162%;
+		margin-left: 0.4rem;
+	}
+
+	@media (width >= 768px) {
+		margin-inline: unset;
+	}
+
+	@media (width >= 1440px) {
+		margin-inline: unset;
+	}
+}
+
+.link--size-normal {
+	padding: 1.6rem 4rem;
+}
+
+.link--size-small {
+	padding: 1.6rem 2.9rem;
+}
+
+.link--shape--pill {
+	border-radius: 2.9rem;
+}
+
+.link--color--lusty-lavender {
+	background-color: var(--lusty-lavender);
+
+	> ::ng-deep span {
+		color: var(--lavender-fragrance);
+	}
+}
+
+.link--color--acapulco-cliffs {
+	background-color: var(--acapulco-cliffs);
+
+	> ::ng-deep span {
+		color: var(--silverpine-cyan);
+	}
+}
