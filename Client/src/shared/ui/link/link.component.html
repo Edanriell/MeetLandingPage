@@ -1,3 +1,12 @@
-<a [class]="linkClasses" [href]="linkHref">
+<a (mousedown)="onMouseDown()"
+   (mouseenter)="onMouseEnter()"
+   (mouseleave)="onMouseLeave()"
+   (mouseup)="onMouseUp()"
+   (touchend)="onTouchEnd()"
+   (touchstart)="onTouchStart()"
+   [@linkAnimation]="isActive ? 'active' : (isHovered ? 'hovered' : 'default')"
+   [class]="linkClasses"
+   [href]="linkHref"
+   [style]="dynamicBackgroundColor">
 	<ng-content></ng-content>
 </a>
