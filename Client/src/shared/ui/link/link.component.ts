@@ -14,11 +14,11 @@ import { animate, state, style, transition, trigger } from "@angular/animations"
 			})),
 			state("hovered", style({
 				transform: "scale(1.1, 1.1)",
-				boxShadow: "0px 10px 20px 2px rgba(0, 0, 0, 0.05)"
+				boxShadow: "0px 10px 20px 2px rgba(0, 0, 0, 0.1)"
 			})),
 			state("active", style({
 				transform: "scale(0.95, 0.95)",
-				boxShadow: "0px 10px 20px 2px rgba(0, 0, 0, 0.25)"
+				boxShadow: "0px 10px 20px 2px rgba(0, 0, 0, 0.1)"
 			})),
 			transition("default <=> hovered", [
 				animate("0.6s cubic-bezier(0.165, 0.84, 0.44, 1)")
